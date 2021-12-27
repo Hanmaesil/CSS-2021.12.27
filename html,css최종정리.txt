@@ -1,0 +1,90 @@
+[1] HTML 
+
+1. HTML이란? 
+- Hyper Text (즉시 접근 가능한 텍스트) 
+- MarkUp Language (태그!) 
+
+2. HTML 구성요소 
+(1) 시작태그 
+(2) 끝태그 
+(3) 내용 Content 
+1+2+3 = 요소 Element 
+
+3. 태그 종류 
+(1) Head태그 / Body태그 
+(2) 제목태그 h1~h6 
+(3) 본문태그 p, span 
+(4) 줄바꿈태그 br -> 홀태그 
+(5) 리스트태그 
+-> 리스트를 선언! (ul, ol) 
+-> 데이터를 넣는 부분! (li) 
+(6) 이미지태그 (src) 
+->절대경로 외부 웹페이지
+->상대경로 내부 파일 
+(7) 테이블 태그 
+- 나 테이블 만들어줄거야! 선언 
+-> 몇줄? tr 
+-> 몇칸? / 내용 
+   ->th 
+   ->td 
+
+(8) Form태그 
+- 나 데이터 받아줄거야! 선언 
+-> action : 어디로?
+-> method : 어떤 방식으로?
+- input 태그 (type text, pw, submit, reset, checkbox, radio.. ) 
+
+[CSS]
+(1) CSS 기본구조 
+선택자{
+   선언;
+}
+
+(2) 선택자 종류 
+- 전체선택자 * 0
+- 타입선택자 / 태그선택자  태그이름 1
+왜? 특정한 요소를 '지정'해야하니까 > 클래스/아이디
+클래스 : 중복이 가능 
+아이디 : 중복이 불가능 
+- 클래스 선택자 . 10
+- 아이디 선택자 # 100
+
+-계층 선택자 
+   > 자식선택자 (>)
+   > 자손선택자 (띄어쓰기) 
+   > 근접후행선택자 (+)
+   > 후행선택자 (~) 
+
+- 그룹 선택자 (,) 
+- 반응 선택자 
+   > 올렸을때 :hover
+   > 클릭 :active 
+
+(3) 공간분할태그
+- 큰 영역 : div 
+- 중간 영역 : p 
+- 세부적인 영역 span 
+
+(4) display속성 
+- block : 너비/높이 O 
+- inline : 너비/높이 X
+- none
+
+(5) 박스모델 
+- 내용 Content
+- 안쪽 여백 Padding
+- 테두리/경계선 Border (border-radius)
+- 바깥여백 Margin 
+
+(6) Box-sizing 
+- 콘텐츠 영역 만큼만 크기로 지정-> Content-box
+- Padding + Contents +Border 크기로 지정 -> Border-box 
+
+(7) Position
+- Static (위치 X) 
+- Relative (위치 O 기준 : 자기자신 원래위치)
+- Absolute (위치 O 기준 : static이 아닌 부모 , 최상위태그) 
+- Fixed (위치O 기준 : 최상위태그) 
+
+선언 방식 (!important) 
+인라인>내부>외부 
